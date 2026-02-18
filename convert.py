@@ -39,7 +39,7 @@ def convert(path: Path, dest: Path):
         if not rows:
             continue
 
-        output_path = dest / f"{path.stem}-{sheet_name}.csv'"
+        output_path = dest / f"{path.stem}-{sheet_name}.csv"
         with open(output_path, 'w', newline='', encoding='utf-8-sig') as f:
             writer = csv.writer(f)
             writer.writerows(rows)
